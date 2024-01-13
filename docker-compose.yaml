@@ -4,8 +4,8 @@ services:
   app:
     user: "${USER_ID:-1000}"
     hostname: "${HOST_NAME:-vid2k}"
-    image: ml-template
-    container_name: ml-template-container
+    image: ml-data
+    container_name: ml-data-container
     build:
       context: .
       dockerfile: ./docker/Dockerfile
@@ -17,15 +17,16 @@ services:
     volumes:
       - ./:/app/
       # - ~/.config/gcloud:${HOME}/.config/gcloud
-      - /mnt/C/Users/VIDHI/.config/gcloud:/home/mlprod/.config/gcloud
+      - /mnt/C/Users/VIDHI/.config/gcloud:/home/${USER_NAME}/.config/gcloud
+      - ~/.ssh:/home/${USER_NAME}/.ssh
     ports:
-      - 8080:8080
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
+      - 8888:8888
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
     ipc: host
     init: true

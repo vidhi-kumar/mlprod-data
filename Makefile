@@ -13,7 +13,7 @@ else
 endif
 
 SERVICE_NAME = app
-CONTAINER_NAME = ml-template-container
+CONTAINER_NAME = ml-data-container
 
 DIRS_TO_VALIDATE = mlprod
 DOCKER_COMPOSE_RUN = $(DOCKER_COMPOSE_COMMAND) run --rm $(SERVICE_NAME)
@@ -28,8 +28,9 @@ guard-%:
 # echo-environment-variable: guard-SOME_ENVIRONMENT_VARIABLE
 # 	@echo $${SOME_ENVIRONMENT_VARIABLE}
 
-entrypoint: up
-	$(DOCKER_COMPOSE_EXEC) python ./mlprod/entrypoint.py
+## Version data
+version-data: up
+	$(DOCKER_COMPOSE_EXEC) python ./mlprod/version_data.py
 
 ## starts jupyter lab
 notebook: up
@@ -81,7 +82,7 @@ build-for-dependencies:
 
 ## lock dependencies with poetry
 lock-dependencies: build-for-dependencies
-	$(DOCKER_COMPOSE_RUN) bash -c "if [ -e /home/vidhi/poetry.lock.build ]; then cp /home/vidhi/poetry.lock.build ./poetry.lock; else poetry lock; fi "
+	$(DOCKER_COMPOSE_RUN) bash -c "if [ -e /home/$(USER_NAME)/poetry.lock.build ]; then cp /home/$(USER_NAME)/poetry.lock.build ./poetry.lock; else poetry lock; fi "
 
 
 ## starts docker container using docker-compose up -d
