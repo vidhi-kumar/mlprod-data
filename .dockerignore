@@ -1,0 +1,6 @@
+*
+
+!docker
+!mlprod
+!pyproject.toml
+!poetry.lock

@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  app:
+    user: "${USER_ID:-1000}"
+    hostname: "${HOST_NAME:-vid2k}"
+    image: ml-template
+    container_name: ml-template-container
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        USER_NAME: "${USER_NAME:-vidhi}"
+        USER_ID: "${USER_ID:-1000}"
+    # env_file:
+    #   - .envs/.app
+    volumes:
+      - ./:/app/
+      # - ~/.config/gcloud:${HOME}/.config/gcloud
+      - /mnt/C/Users/VIDHI/.config/gcloud:/home/mlprod/.config/gcloud
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    ipc: host
+    init: true
