@@ -19,6 +19,7 @@ services:
       # - ~/.config/gcloud:${HOME}/.config/gcloud
       - /mnt/C/Users/VIDHI/.config/gcloud:/home/${USER_NAME}/.config/gcloud
       - ~/.ssh:/home/${USER_NAME}/.ssh
+      # - ./:/app/:ro,cached
     ports:
       - 8888:8888
     # deploy:

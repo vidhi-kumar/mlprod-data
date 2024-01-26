@@ -28,6 +28,6 @@ def setup_config() -> None:
 def setup_logger() -> None:
     with open("./mlprod/configs/hydra/job_logging/custom.yaml", "r") as stream:
         config = yaml.load(stream, Loader=yaml.FullLoader)
-        print(config)
+        # print(config)
         logging.config.dictConfig(config)
         
