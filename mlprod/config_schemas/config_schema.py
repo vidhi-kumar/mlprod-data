@@ -3,7 +3,8 @@ from pydantic.dataclasses import dataclass
 
 @dataclass
 class Config:
-    pass
+    dvc_remote_name: str = "google-drive-storage"
+    dvc_remote_url: str = "gdrive://1NqO-ve9wRnGZyOfR88UM88qsHtFz71LU"
 
 def setup_config() -> None:
     cs = ConfigStore.instance() 
