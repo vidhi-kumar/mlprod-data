@@ -40,9 +40,8 @@ def commit_to_dvc(dvc_raw_data_folder: str, dvc_remote_name: str) -> None:
         current_version = "0"
     next_version = f"v{int(current_version)+1}"
     run_shell_command(f"dvc add {dvc_raw_data_folder}")
-    run_shell_command("git config --global --add safe.directory /app")
-    run_shell_command(f"git add .")
     # run_shell_command("git config --global --add safe.directory /app")
+    run_shell_command(f"git add .")
     run_shell_command(f"git commit -nm 'Updated version of data from v{current_version} to {next_version}'")
     run_shell_command(f"git tag -a {next_version} -m 'Data version {next_version}'")
     run_shell_command(f"dvc push {dvc_raw_data_folder}.dvc --remote {dvc_remote_name}")
