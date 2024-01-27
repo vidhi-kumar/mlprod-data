@@ -1,0 +1,73 @@
+[33ma7bd471[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD@{897c5f3}
+[33m685c736[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to origin/main
+[33m362fe9d[m HEAD@{2}: commit: Configured remote DVC storage
+[33m411d75a[m HEAD@{3}: commit: Initialized DVC
+[33m5babe39[m HEAD@{4}: commit: Updated version of data from v0 to v1
+[33ma107939[m HEAD@{5}: commit: Configured remote DVC storage
+[33mb9f99e6[m HEAD@{6}: commit: Initialized DVC
+[33mf13d968[m HEAD@{7}: commit: Configured remote DVC storage
+[33m877058d[m HEAD@{8}: commit: Initialized DVC
+[33m2b9261d[m HEAD@{9}: commit: Updated version of data from v0 to v1
+[33m8666a1d[m HEAD@{10}: commit: Configured remote DVC storage
+[33m2db72c7[m HEAD@{11}: commit: Initialized DVC
+[33m66c2300[m HEAD@{12}: commit: Configured remote DVC storage
+[33m70c153a[m HEAD@{13}: commit: Initialized DVC
+[33m1862d15[m HEAD@{14}: commit: Configured remote DVC storage
+[33m779e69f[m HEAD@{15}: commit: Initialized DVC
+[33mdf16de1[m HEAD@{16}: commit: Configured remote DVC storage
+[33mf7095ea[m HEAD@{17}: commit: Initialized DVC
+[33mb563cad[m HEAD@{18}: commit: Configured remote DVC storage
+[33m016c012[m HEAD@{19}: commit: Initialized DVC
+[33m32ffe47[m HEAD@{20}: commit: Updated version of data from v0 to v1
+[33m1bb8f7b[m HEAD@{21}: commit: Configured remote DVC storage
+[33m8b545f3[m HEAD@{22}: commit: Initialized DVC
+[33m3c495c4[m HEAD@{23}: commit: Configured remote DVC storage
+[33mf49a2d8[m HEAD@{24}: commit: Initialized DVC
+[33m099647b[m HEAD@{25}: commit: Updated version of data from v0 to v1
+[33m1a85ae8[m HEAD@{26}: commit: Configured remote DVC storage
+[33m0abc222[m HEAD@{27}: commit: Initialized DVC
+[33m11693e9[m HEAD@{28}: commit: Updated version of data from v0 to v1
+[33m986c110[m HEAD@{29}: commit: Configured remote DVC storage
+[33mc569648[m HEAD@{30}: commit: Initialized DVC
+[33m503e7dc[m HEAD@{31}: commit: Updated version of data from v0 to v1
+[33m3b22287[m HEAD@{32}: commit: Configured remote DVC storage
+[33m14487c0[m HEAD@{33}: commit: Initialized DVC
+[33m89d1c72[m HEAD@{34}: commit: Updated version of data from v0 to v1
+[33m820961f[m HEAD@{35}: commit: Configured remote DVC storage
+[33m10bdda1[m HEAD@{36}: commit: Initialized DVC
+[33mf787aae[m HEAD@{37}: commit: Updated version of data from v0 to v1
+[33m8f7a378[m HEAD@{38}: commit: Configured remote DVC storage
+[33m3e6c4db[m HEAD@{39}: commit: Initialized DVC
+[33mf2e6205[m HEAD@{40}: commit: Updated version of data from v0 to v1
+[33me3e13ab[m HEAD@{41}: commit: Configured remote DVC storage
+[33ma854d2e[m HEAD@{42}: commit: Initialized DVC
+[33m3184664[m HEAD@{43}: commit: Updated version of data from v0 to v1
+[33me9da15c[m HEAD@{44}: commit: Configured remote DVC storage
+[33mcd14daf[m HEAD@{45}: commit: Initialized DVC
+[33m80b36a1[m HEAD@{46}: commit: Updated version of data from v0 to v1
+[33m9c4ce84[m HEAD@{47}: commit: Configured remote DVC storage
+[33mf944105[m HEAD@{48}: commit: Initialized DVC
+[33mf6a3329[m HEAD@{49}: commit: Configured remote DVC storage
+[33m0ced868[m HEAD@{50}: commit: Initialized DVC
+[33m897c5f3[m HEAD@{51}: commit: Updated version of data from v0 to v1
+[33md00aaee[m HEAD@{52}: commit: Configured remote DVC storage
+[33m6fcfda3[m HEAD@{53}: commit: Initialized DVC
+[33made8334[m HEAD@{54}: commit: Configured remote DVC storage
+[33m1f6a152[m HEAD@{55}: commit: Initialized DVC
+[33ma68fbde[m HEAD@{56}: commit: Configured remote DVC storage
+[33m685c736[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{57}: commit: added functionality to initialize dvc storage
+[33me4f8dbb[m HEAD@{58}: commit: Initialized DVC
+[33macfd167[m HEAD@{59}: commit: added safe dir for git to work
+[33m7a62c35[m HEAD@{60}: commit: gave permissions to user for app
+[33md2ec9b0[m HEAD@{61}: commit: gave permissions to user for app
+[33m58302e6[m HEAD@{62}: commit: dvc init process
+[33m3cbc90c[m HEAD@{63}: commit: some changes
+[33meeaa8fd[m HEAD@{64}: reset: moving to HEAD
+[33meeaa8fd[m HEAD@{65}: commit: added functionality to initialize DVC
+[33m90a555d[m HEAD@{66}: reset: moving to HEAD
+[33m90a555d[m HEAD@{67}: reset: moving to HEAD^
+[33m032feab[m HEAD@{68}: commit: added functionality to initialize DVC
+[33m90a555d[m HEAD@{69}: reset: moving to HEAD
+[33m90a555d[m HEAD@{70}: commit: changes for data versioning
+[33ma7bd471[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{71}: Branch: renamed refs/heads/master to refs/heads/main
+[33ma7bd471[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{73}: commit (initial): initial commit
