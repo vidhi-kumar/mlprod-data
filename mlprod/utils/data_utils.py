@@ -40,6 +40,7 @@ def commit_to_dvc(dvc_raw_data_folder: str, dvc_remote_name: str) -> None:
     current_version = ""
     if not current_version:
         current_version = "0"
+    DATA_UTILS_LOGGER.info(f"Current version {current_version}")
     next_version = f"v{int(current_version)+1}"
     run_shell_command(f"dvc add {dvc_raw_data_folder}")
     run_shell_command(f"git add .")
