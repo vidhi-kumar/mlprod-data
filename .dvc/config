@@ -1,6 +1,3 @@
 [core]
     analytics = false
     autostage = true
-    remote = google-drive-storage
-['remote "google-drive-storage"']
-    url = gdrive://1NqO-ve9wRnGZyOfR88UM88qsHtFz71LU
