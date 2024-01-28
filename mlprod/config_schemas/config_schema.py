@@ -3,7 +3,7 @@ from pydantic.dataclasses import dataclass
 
 @dataclass
 class Config:
-    dvc_remote_name: str = "google-drive-storage"
+    dvc_remote_name: str = "gdrive"
     dvc_remote_url: str = "gdrive://1wLZP4DEnFFpAtYoKi7C0isKToXXpwBnv"
     dvc_raw_data_folder: str = "data/raw"
 
