@@ -1,7 +1,7 @@
 from pathlib import Path
-from mlprod.utils.utils import get_logger, run_shell_command
 from subprocess import CalledProcessError
 
+from mlprod.utils.utils import get_logger, run_shell_command
 
 DATA_UTILS_LOGGER = get_logger(Path(__file__).name)
 
@@ -14,7 +14,7 @@ def initialize_dvc() -> None:
     if is_dvc_initialized():
         DATA_UTILS_LOGGER.info("DVC is already initialized")
         return
-    
+
     DATA_UTILS_LOGGER.info("Initializing DVC")
     run_shell_command("dvc init")
     run_shell_command("dvc config core.analytics false")
@@ -44,11 +44,11 @@ def commit_to_dvc(dvc_raw_data_folder: str, dvc_remote_name: str) -> None:
     DATA_UTILS_LOGGER.info(f"Current version {current_version}")
     next_version = f"v{int(current_version)+1}"
     run_shell_command(f"dvc add {dvc_raw_data_folder}")
-    run_shell_command(f"git add .")
+    run_shell_command("git add .")
     run_shell_command("git config --global --add safe.directory /app")
-    DATA_UTILS_LOGGER.info(f"doing git commit for version update")
+    DATA_UTILS_LOGGER.info("doing git commit for version update")
     run_shell_command(f"git commit -m 'Updated version of data from v{current_version} to {next_version}'")
-    DATA_UTILS_LOGGER.info(f"adding new tag for the new version")
+    DATA_UTILS_LOGGER.info("adding new tag for the new version")
     run_shell_command(f"git tag -a {next_version} -m 'Data version {next_version}'")
     # DATA_UTILS_LOGGER.info(f"pushing data to remote location")
     # run_shell_command(f"dvc config core.hardlink_lock true")
@@ -56,7 +56,7 @@ def commit_to_dvc(dvc_raw_data_folder: str, dvc_remote_name: str) -> None:
     # run_shell_command(f"dvc push {dvc_raw_data_folder}.dvc --remote {dvc_remote_name}")
     run_shell_command("git push --follow-tags")
     run_shell_command("git push -f --tags")
-        
+
 
 def make_new_data_version(dvc_raw_data_folder: str, dvc_remote_name: str) -> None:
     try:
