@@ -5,7 +5,7 @@ from pydantic.dataclasses import dataclass
 @dataclass
 class Config:
     dvc_remote_name: str = "local"
-    dvc_remote_url: str = r"E:\DVC_REMOTE_STORAGE"
+    dvc_remote_url: str = r"/home/VIDHI/dvc_remote_storage"
     dvc_raw_data_folder: str = "data/raw"
 
 
