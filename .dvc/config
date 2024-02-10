@@ -1,6 +1,3 @@
 [core]
     analytics = false
     autostage = true
-    remote = local
-['remote "local"']
-    url = /home/VIDHI/dvc_remote_storage
