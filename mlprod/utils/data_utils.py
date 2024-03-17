@@ -52,7 +52,7 @@ def commit_to_dvc(dvc_raw_data_folder: str, dvc_remote_name: str) -> None:
     run_shell_command(f"git tag -a {next_version} -m 'Data version {next_version}'")
     DATA_UTILS_LOGGER.info(f"pushing data to remote location")
     # run_shell_command(f"dvc config core.hardlink_lock true")
-    run_shell_command(f'pip install "dvc[gdrive]"')
+    # run_shell_command(f'pip install "dvc[gdrive]"')
     run_shell_command(f"dvc push {dvc_raw_data_folder}.dvc --remote {dvc_remote_name}")
     run_shell_command("git push --follow-tags")
     run_shell_command("git push -f --tags")
