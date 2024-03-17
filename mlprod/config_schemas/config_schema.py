@@ -9,9 +9,14 @@ class Config:
     # dvc_remote_url: str = r"/home/VIDHI/dvc_remote_storage"
     # dvc_raw_data_folder: str = "data/raw"
 
-    dvc_remote_name: str = "gdrive"
-    # dvc_remote_url: str = r"/home/VIDHI/dvc_remote_storage"
-    dvc_remote_url: str = "gdrive://1OkozUBhgXYBaDc6qur5p7yX1o1tk-z_6"
+    # dvc_remote_name: str = "gdrive"
+    # # dvc_remote_url: str = r"/home/VIDHI/dvc_remote_storage"
+    # dvc_remote_url: str = "gdrive://1OkozUBhgXYBaDc6qur5p7yX1o1tk-z_6"
+    # dvc_raw_data_folder: str = "data/raw"
+    
+    # tbh, google cloud storage pe aana hi pada
+    dvc_remote_name: str = "gcs-storage"
+    dvc_remote_url: str = "gs://mlprod/data/raw"
     dvc_raw_data_folder: str = "data/raw"
 
 def setup_config() -> None:
