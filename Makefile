@@ -75,6 +75,11 @@ full-check: lint check-type-annotations
 build:
 	$(DOCKER_COMPOSE_COMMAND) build $(SERVICE_NAME)
 
+
+## builds docker image without cache
+build-no-cache:
+	$(DOCKER_COMPOSE_COMMAND) build --no-cache $(SERVICE_NAME)
+
 ## remove poetry.lock and build docker image
 build-for-dependencies:
 	rm -f *.lock

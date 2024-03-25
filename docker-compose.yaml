@@ -16,8 +16,7 @@ services:
     #   - .envs/.app
     volumes:
       - ./:/app/
-      # - ~/.config/gcloud:${HOME}/.config/gcloud
-      - /mnt/C/Users/VIDHI/.config/gcloud:/home/${USER_NAME}/.config/gcloud
+      - C:/Users/VIDHI/AppData/Roaming/gcloud/:/home/${USER_NAME}/.config/gcloud
       - ~/.ssh:/home/${USER_NAME}/.ssh
       - E:/DVC_REMOTE_STORAGE:/home/${USER_NAME}/dvc_remote_storage
       # - ./:/app/:ro,cached
